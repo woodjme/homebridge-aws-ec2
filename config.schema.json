@@ -1,0 +1,50 @@
+{
+  "pluginAlias": "AWSEC2",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "instances": {
+        "title": "Instances",
+        "type": "array",
+        "required": true,
+        "items": {
+          "type": "object",
+          "properties": {
+            "displayName": {
+              "title": "Display Name",
+              "type": "string",
+              "required": true,
+              "default": "My AWS EC2 Instance"
+            },
+            "instanceId": {
+              "title": "Instance ID",
+              "type": "string",
+              "required": true,
+              "default": "i-12345678"
+            },
+            "region": {
+              "title": "Region",
+              "type": "string",
+              "required": true,
+              "default": "eu-west-2"
+            },
+            "accessKeyId": {
+              "title": "IAM Access Key ID",
+              "type": "string",
+              "required": true,
+              "default": "AKIAIOSFODNN7EXAMPLE"
+            },
+            "secretAccessKey": {
+              "title": "IAM Secret Access Key",
+              "type": "string",
+              "required": true,
+              "default": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+            }
+          }
+        }
+      }
+    }
+  }
+}
