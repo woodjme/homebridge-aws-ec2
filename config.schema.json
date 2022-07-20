@@ -16,35 +16,61 @@
               "title": "Display Name",
               "type": "string",
               "required": true,
-              "default": "My AWS EC2 Instance"
+              "placeholder": "My AWS EC2 Instance",
+              "description": "The name of the instance"
             },
             "instanceId": {
               "title": "Instance ID",
               "type": "string",
               "required": true,
-              "default": "i-12345678"
+              "placeholder": "i-12345678",
+              "description": "The ID of the instance to monitor"
             },
             "region": {
               "title": "Region",
               "type": "string",
               "required": true,
-              "default": "eu-west-2"
+              "placeholder": "eu-west-2",
+              "description": "The region in which to lookup the instance"
             },
             "accessKeyId": {
               "title": "IAM Access Key ID",
               "type": "string",
               "required": true,
-              "default": "AKIAIOSFODNN7EXAMPLE"
+              "placeholder": "AKIAIOSFODNN7EXAMPLE",
+              "description": "The IAM Access Key ID to use to authenticate with the instance"
             },
             "secretAccessKey": {
               "title": "IAM Secret Access Key",
               "type": "string",
               "required": true,
-              "default": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+              "placeholder": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+              "description": "The IAM Secret Access Key to use to authenticate with the instance"
             }
           }
         }
       }
     }
-  }
+  },
+  "layout": [
+    {
+      "type": "section",
+      "title": "Instances",
+      "buttonText": "Add Instance",
+      "key": "instances",
+      "items": [
+        {
+          "type": "section",
+          "title": "Instance",
+          "items": [
+            "instances[].displayName",
+            "instances[].instanceId",
+            "instances[].region",
+            "instances[].accessKeyId",
+            "instances[].secretAccessKey"
+          ]
+        }
+      ]
+    }
+  ]
 }
