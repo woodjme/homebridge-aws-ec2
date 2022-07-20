@@ -1,7 +1,7 @@
 {
   "displayName": "Homebridge AWS EC2",
   "name": "homebridge-aws-ec2",
-  "version": "0.0.3-beta.0",
+  "version": "0.0.4-beta.0",
   "description": "Homebridge plugin to turn on/off a AWS EC2 instance.",
   "license": "Apache-2.0",
   "repository": {
